@@ -7,7 +7,7 @@ export default function App() {
       <Weather />
       <small>
         <a
-          href="https://github.com/ladynskaya95/Vanilla-weather-app"
+          href="https://github.com/ladynskaya95/react-weather-app"
           target="blank"
         >
           Open-source code{" "}
