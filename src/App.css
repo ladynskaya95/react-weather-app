@@ -83,6 +83,13 @@ small a {
   color: rgb(184, 50, 115);
 }
 
+#date{
+  position: relative;
+  top: 10px;
+  margin:8px;
+}
+
+
 #date,
 #current-condition {
   color: rgb(12, 58, 93);
@@ -173,3 +180,28 @@ small a {
   position: relative;
   top: -6px;
 }
+.weather-app {
+    border-radius: 26px;
+    border-style: groove;
+    border-color: #78a8db;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  .weather-icon canvas {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    right: 5px;
+    vertical-align: top;
+    z-index: 100;
+  }
+  
+  .weather-icon strong {
+    color: rgb(74, 139, 176);
+    font-size: 40px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 12px;
+  }
