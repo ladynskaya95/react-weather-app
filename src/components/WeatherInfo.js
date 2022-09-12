@@ -2,6 +2,7 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
+    console.log(props.data)
   return (
     <div className="weather-info">
       <div className="overview">
@@ -14,7 +15,7 @@ export default function WeatherInfo(props) {
           </li>
         </ul>
         <div className="row">
-          <div className="col-6">
+          <div className="col-3">
             <div className="clearfix weather-icon">
               <div className="float-left">
                 <WeatherIcon code={props.data.icon} size={75} />
@@ -27,20 +28,37 @@ export default function WeatherInfo(props) {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-4">
+            <ul id="mainInfo">
+              <li> max {Math.round(props.data.maxTemp)}°C</li>
+              <li> min {Math.round(props.data.minTemp)}°C</li>
+              <li> feels like {Math.round(props.data.feelsLike)}°C</li>
+            </ul>
+          </div>
+          <div className="col-5">
             <span>
               <ul id="additional-info">
-                <li>
-                  Feels like:{" "}
-                  <span id="feels-like">{Math.round(props.data.feel)}</span>°C
-                </li>
                 <li>
                   Humidity: <span id="humidity">{props.data.humidity}</span>%
                 </li>
                 <li>
                   Wind Speed:{" "}
-                  <span id="wind-speed">{Math.round(props.data.wind)}</span>{" "}
+                  <span id="wind-speed">
+                    {Math.round(props.data.windSpeed)}
+                  </span>{" "}
                   km/h
+                </li>
+                <li>
+                  Visibility:{" "}
+                  <span id="wind-speed">{props.data.visibility / 1000} km</span>{" "}
+                </li>
+                <li>
+                  Pressure:{" "}
+                  <span className="textLeft">{props.data.pressure} hPa</span>
+                </li>
+                <li>
+                  Clouds:{" "}
+                  <span className="textLeft">{props.data.clouds} %</span>
                 </li>
               </ul>
             </span>

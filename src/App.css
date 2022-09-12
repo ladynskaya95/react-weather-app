@@ -30,7 +30,6 @@ li {
   color: #67798d;
   font-family: "Fredoka", sans-serif;
   font-weight: 100px;
-  font-size: 15px;
   list-style: none;
   margin: 0 auto;
   padding: 0;
@@ -70,25 +69,35 @@ small a {
   position: relative;
   top: 20px;
   color: rgb(213, 143, 138);
+  text-align: right;
 }
 
 #search-btn {
-  color: rgb(148, 77, 111);
+  color: rgb(151, 238, 250);
   font-family: "Fredoka", sans-serif;
-  position: relative;
-  top: 6px;
+  background-color: rgb(121, 108, 128) !important;
+
+}
+.days{
+background-color: rgba(121, 108, 128, 0.199) !important;
+margin:2px;
 }
 
 #search-btn:hover {
   color: rgb(184, 50, 115);
+  background-color: rgb(115, 165, 172) !important;
 }
 
 #date{
-  position: relative;
-  top: 10px;
   margin:8px;
 }
 
+#mainInfo{
+  margin-top: 78px;
+  font-size: 12px !important;
+  text-align: left;
+  opacity: 0.8;
+}
 
 #date,
 #current-condition {

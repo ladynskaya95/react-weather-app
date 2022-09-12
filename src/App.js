@@ -3,7 +3,7 @@ import Weather from "./components/Weather";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <Weather defaultCity="Kiev" />
       <small>
         <a
