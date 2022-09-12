@@ -1,38 +1,175 @@
 .App {
   text-align: center;
+   max-width: 600px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background-image: url("https://img.freepik.com/free-photo/top-view-background-beautiful-white-grey-brown-cream-blue-background_140725-72219.jpg?t=st=1658084579~exp=1658085179~hmac=8d5800d924942f19671431aa6f095e5c9a6c28a657269ee689b96fedb3d6be57&w=1780");
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: rgb(245, 172, 127);
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+  color: #2c0102;
+  font-family: "Russo One", sans-serif;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  color: #67798d;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 100px;
+  font-size: 15px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li:first-letter {
+  text-transform: capitalize;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+small {
+  color: rgb(87, 159, 214);
+  font-size: 12px;
+  font-family: "Fredoka", sans-serif;
+  padding-left: 20px;
+}
+
+small a {
+  color: #2c0102;
+}
+
+.units {
+  color: rgb(148, 77, 111);
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  left: 8px;
+  top: -4px;
+}
+
+#additional-info {
+  position: relative;
+  top: 20px;
+  color: rgb(213, 143, 138);
+}
+
+#search-btn {
+  color: rgb(148, 77, 111);
+  font-family: "Fredoka", sans-serif;
+  position: relative;
+  top: 6px;
+}
+
+#search-btn:hover {
+  color: rgb(184, 50, 115);
+}
+
+#date,
+#current-condition {
+  color: rgb(12, 58, 93);
+  font-family: "Russo One", sans-serif;
+}
+
+#city-input {
+  color: rgb(210, 125, 118);
+  font-family: "Fredoka", sans-serif;
+}
+
+#search-form {
+  margin-bottom: 30px;
+}
+
+#temperature-degree {
+  color: rgb(148, 77, 111);
+}
+
+.weather-forecast-date {
+  color: rgb(148, 77, 111);
+}
+
+.weather-forecast {
+  font-family: "Fredoka", sans-serif;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.weather-temp-min {
+  color: #7f6a8a;
+}
+
+.overview {
+  margin-bottom: 40px;
+}
+
+.weather-icon .active {
+  color: rgb(130, 112, 141);
+  outline-color: #fff;
+}
+
+.weather-icon .active:hover {
+  color: rgb(201, 146, 235);
+  text-decoration: none;
+}
+
+.weather-app-cntr {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 0;
+}
+
+.weather-app {
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?t=st=1658081679~exp=1658082279~hmac=265c91b12ab51193cdbbcf1b45bd2cc434675a0fcef0a281d580a67049b34608&w=1380");
+  background-repeat: no-repeat;
+  border-style: inset;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 35px;
+  border-radius: 15px;
+}
+
+.weather-icon img {
+  display: inline-block;
+  height: 70px;
+  position: relative;
+  top: 6px;
+  right: 5px;
+  vertical-align: top;
+  width: 70px;
+}
+
+.weather-icon strong {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  position: relative;
+  top: 12px;
+}
+
+.weather-icon .units {
+  color: rgb(148, 77, 111);
+  font-family: "Russo One", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  top: -6px;
 }
